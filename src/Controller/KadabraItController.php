@@ -28,25 +28,4 @@ class KadabraItController extends ControllerBase
 
   }
 
-// Página 2
-  public function getPage2() {
-    $kadrabra_service = \Drupal::service('kadabra_it_services');
-    $three_last_content = $kadrabra_service->getlastThreeContent();
-
-    // Recorrer los resultados y guardar los nodos en un array
-    if (!empty($three_last_content)) {
-      foreach ($three_last_content as $three_last_contenttId) {
-        $node = Node::load($three_last_contenttId);
-        $data[] = $node;
-      }
-    }
-
-    return array(
-      '#theme' => 'kadabra_block',
-      '#titulo' => $this->t('Listado de mis ultimos tres contenidos'),
-      '#descripcion' => $this->t('Ultimos 3 contenidos creados por mi'),
-      '#data' => $data
-    );
-  }
-
 }
