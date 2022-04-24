@@ -1,0 +1,8 @@
+kadabrait_content.show_last_ten_content:
+  path: '/kadabrait/last_ten_content'
+  defaults:
+    _controller: 'Drupal\kadabrait_content\Controller\KadabraItController::getPage1'
+    _title: 'Pagina de 10 ultimos contenidos'
+  requirements:
+    _permission: 'access content'
+

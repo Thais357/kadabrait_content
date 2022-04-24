@@ -1,0 +1,4 @@
+services:
+  kadabra_it_content_services:
+   class: 'Drupal\kadabrait_content\Services\KadabraItServices'
+   arguments: []

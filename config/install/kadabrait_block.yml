@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+module:
+  - system
+id: kadabrait_block
+theme: THEME_NAME
+region: sidebar_left
+weight: 0
+provider: null
+plugin: kadabrait_block
+settings:
+label: 'Block kadabraIt'
+label_display: '0'
+use_site_logo: true
+use_site_name: true
+use_site_slogan: true
+  'visibility' => [
+  'request_path' => [
+  'id' => 'request_path',
+  'negate' => FALSE,
+  'pages' => '/frontpage',
+  ],

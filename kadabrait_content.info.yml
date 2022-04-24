@@ -1,0 +1,5 @@
+name: Kadabra It Module
+description: Módulo de kadabra
+package: Thais
+type: module
+core_version_requirement: 9.x

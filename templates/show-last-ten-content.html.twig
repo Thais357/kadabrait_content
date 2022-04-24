@@ -1,0 +1,19 @@
+
+
+{% if data %}
+  <div class="col-sm-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">Ultimos 10 contenidos</div>
+      <div class="panel-body">
+        <p>Esta tabla muestra los ultimos 10 contenidos creados por el usuario logueado</p>
+      </div>
+    </div>
+
+    <ul>
+      {% for d in data %}
+        <li>Id:{{ d.nid.value }} -- Type: {{ d.type.target_id }} --Titulo {{ d.title.value }}</li>
+      {% endfor %}
+    </ul>
+
+  </div>
+{% endif %}

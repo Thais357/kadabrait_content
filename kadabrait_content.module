@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Access\AccessResult;
+
+/**
+ * Theme hook
+ */
+function kadabrait_content_theme() {
+
+  return array(
+    'show_last_ten_content' => array(
+      'variables' => array(
+        'data'   => NULL
+      ),
+      'template' => 'show-last-ten-content'
+    ),
+    'kadabra_block' => array(
+        'variables' => ['data' => NULL],
+    )
+  );
+
+}
+
